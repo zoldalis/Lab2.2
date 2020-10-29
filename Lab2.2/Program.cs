@@ -27,13 +27,13 @@ namespace Lab2._2
                 {
                     for (int i = 0; i < 10; i++)
                     {
-                        nums[i] = item.f1((double)i);
+                        nums[i] = item.TheFunc((double)i);
                     }
                     gr.Draw(nums);
                 }
                 else
                 {
-                    Console.WriteLine(item.f2());
+                    Console.WriteLine(item.FuncName());
                 }
                 
             }
