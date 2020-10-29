@@ -1,0 +1,14 @@
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lib.dll
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lib2-2-1.dll
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lib2-2-2.dll
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lib2-2-3-1.dll
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lib2-2-3-2.dll
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lib2-2-3.dll
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lab2.2.exe.config
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lab2.2.exe
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\bin\Debug\Lab2.2.pdb
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\obj\Debug\Lab2.2.csprojAssemblyReference.cache
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\obj\Debug\Lab2.2.csproj.CoreCompileInputs.cache
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\obj\Debug\Lab2.2.exe
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\obj\Debug\Lab2.2.pdb
+C:\Users\mikel\source\repos\Lab2.2\Lab2.2\obj\Debug\Lab2.2.csproj.ResolveComReference.cache
