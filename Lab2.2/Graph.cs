@@ -12,22 +12,23 @@ namespace Lab2._2
     {
         double f1(double x);
         string f2();
+
     }
     
     public class dll1 : Idlls
     {
         public double f1(double x) {
-            return 0;
+            return TheFunc(x);
         }
         public string f2()
         {
-            return "";
+            return Marshal.PtrToStringAnsi(FuncName());
         }
         [DllImport("Lib.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
         public static extern double TheFunc(double x);
 
         [DllImport("Lib.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
-        public static extern string FuncName();
+        public static extern IntPtr FuncName();
         public dll1()
         {
             
@@ -37,18 +38,18 @@ namespace Lab2._2
     {
         public double f1(double x)
         {
-            return 0;
+            return TheFunc(x);
         }
         public string f2()
         {
-            return "";
+            return Marshal.PtrToStringAnsi(FuncName());
         }
 
         [DllImport("Lib2-2-1.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
         public static extern double TheFunc(double x);
 
         [DllImport("Lib2-2-1.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
-        public static extern string FuncName();
+        public static extern IntPtr FuncName();
 
         public dll2()
         {
@@ -60,17 +61,17 @@ namespace Lab2._2
 
         public double f1(double x)
         {
-            return 0;
+            return TheFunc(x);
         }
         public string f2()
         {
-            return "";
+            return Marshal.PtrToStringAnsi(FuncName());
         }
         [DllImport("Lib2-2-2.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
         public static extern double TheFunc(double x);
 
         [DllImport("Lib2-2-2.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
-        public static extern string FuncName();
+        public static extern IntPtr FuncName();
 
         public dll3()
         {
@@ -82,18 +83,18 @@ namespace Lab2._2
 
         public double f1(double x)
         {
-            return 0;
+            return TheFunc(x);
         }
         public string f2()
         {
-            return "";
+            return Marshal.PtrToStringAnsi(FuncName());
         }
 
         [DllImport("Lib2-2-3.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
         public static extern double TheFunc(double x);
 
         [DllImport("Lib2-2-3.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
-        public static extern string FuncName();
+        public static extern IntPtr FuncName();
 
         public dll4()
         {
@@ -105,18 +106,18 @@ namespace Lab2._2
 
         public double f1(double x)
         {
-            return 0;
+            return TheFunc(x);
         }
         public string f2()
         {
-            return "";
+            return Marshal.PtrToStringAnsi(FuncName());
         }
 
         [DllImport("Lib2-2-3-1.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
         public static extern double TheFunc(double x);
 
         [DllImport("Lib2-2-3-1.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
-        public static extern string FuncName();
+        public static extern IntPtr FuncName();
 
         public dll5()
         {
@@ -128,18 +129,18 @@ namespace Lab2._2
 
         public double f1(double x)
         {
-            return 0;
+            return TheFunc(x);
         }
         public string f2()
         {
-            return "";
+            return Marshal.PtrToStringAnsi(FuncName());
         }
 
         [DllImport("Lib2-2-3-2.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
         public static extern double TheFunc(double x);
 
         [DllImport("Lib2-2-3-2.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
-        public static extern string FuncName();
+        public static extern IntPtr FuncName();
 
         public dll6()
         {
@@ -155,7 +156,7 @@ namespace Lab2._2
         {
 
         }
-        public void Draw(double[] nums)
+        public void Draw(double[] nums,string fname)
         {
             try
             {
@@ -163,6 +164,7 @@ namespace Lab2._2
                 application.Visible = true;
                 Workbook workbook = application.Workbooks.Add(1);
                 Worksheet sheet = (Worksheet)workbook.ActiveSheet;
+                sheet.Name = fname;
                 int i = 0;
                 for (; i < 10; i++)
                 {
