@@ -22,7 +22,6 @@ namespace Lab2._2
             double[] nums = new double[10];
             dlls.ForEach(item =>
             {
-                Console.WriteLine(dlls.Count);
                 try
                 {
                     Console.WriteLine($"{item.GetType().Name} : {item.f2()}");
@@ -30,7 +29,7 @@ namespace Lab2._2
                     {
                         nums[i] = item.f1((double)i);
                     }
-                    gr.Draw(nums,item.f2());
+                    gr.Draw(nums, item.GetType().Name);
                 }
                 catch (Exception e)
                 {
